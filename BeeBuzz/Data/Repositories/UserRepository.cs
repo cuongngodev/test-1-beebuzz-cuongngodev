@@ -1,5 +1,6 @@
 ﻿using BeeBuzz.Data.Entities;
 using BeeBuzz.Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace BeeBuzz.Data.Repositories
 {
@@ -10,5 +11,5 @@ namespace BeeBuzz.Data.Repositories
 
         }
     }
- 
+
 }

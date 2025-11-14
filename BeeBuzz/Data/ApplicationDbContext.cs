@@ -12,7 +12,12 @@ namespace BeeBuzz.Data
             : base(options)
         {
         }
+        public DbSet<Orgnanization> Orgnanization { get; set; }
+        public DbSet<Beehive> Beehive { get; set; }
+        public DbSet<User> User{ get; set; }
+
         
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
