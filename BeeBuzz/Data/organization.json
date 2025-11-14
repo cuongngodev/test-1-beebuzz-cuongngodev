@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "0000-0000-0000-0000",
+    "Users": [
+      {
+        "UserId": 0,
+        "FirstName": "Cuong",
+        "LastName": "Ngo",
+        "Age": 28
+      }
+    ],
+    "Name": "John Abbott",
+    "Description": "A wellknowBeehive organization in Montreal."
+  }
+
+]
+ 

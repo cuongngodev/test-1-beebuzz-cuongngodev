@@ -1,6 +1,10 @@
-﻿namespace BeeBuzz.Data.Interfaces
+﻿using BeeBuzz.Data.Entities;
+
+namespace BeeBuzz.Data.Interfaces
 {
-    public interface IBeehiveRepository
+    public interface IBeehiveRepository : IBeeBuzzGenericRepository<Beehive>
     {
+        IEnumerable<Beehive> GetAll();
+
     }
 }
