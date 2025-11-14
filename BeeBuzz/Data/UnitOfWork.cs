@@ -1,10 +1,12 @@
 ﻿
+using BeeBuzz.Data.Repositories.Helpers;
+
 namespace BeeBuzz.Data
 {
     public class UnitOfWork: IUnitOfWork
     {
         private ApplicationDbContext _context;
-        private readonly IRepositoryProvider _repositoryProvider;
+        private readonly Repositories.Helpers.IRepositoryProvider _repositoryProvider;
         //private ILogger<DutchProductRepository> _loggerProduct;
         //private DutchProductRepository _productRepository;
 

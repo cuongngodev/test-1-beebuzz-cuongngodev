@@ -52,3 +52,12 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs
+/BeeBuzz/obj/Debug/net8.0/BeeBuzz.AssemblyInfoInputs.cache
+/BeeBuzz/obj/Debug/net8.0/BeeBuzz.assets.cache
+/BeeBuzz/obj/Debug/net8.0/BeeBuzz.GeneratedMSBuildEditorConfig.editorconfig
+/BeeBuzz/obj/BeeBuzz.csproj.nuget.dgspec.json
+/BeeBuzz/obj/BeeBuzz.csproj.nuget.g.props
+/BeeBuzz/obj/BeeBuzz.csproj.nuget.g.targets
+/BeeBuzz/obj/project.assets.json
+/BeeBuzz/obj/project.nuget.cache

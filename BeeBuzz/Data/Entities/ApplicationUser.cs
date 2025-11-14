@@ -4,5 +4,7 @@ namespace BeeBuzz.Data.Entities
 {
     public class ApplicationUser : IdentityUser<int>
     {
+       
+
     }
 }
