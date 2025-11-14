@@ -14,7 +14,6 @@ namespace BeeBuzz.Data
         }
         public DbSet<Orgnanization> Orgnanization { get; set; }
         public DbSet<Beehive> Beehive { get; set; }
-        public DbSet<User> User{ get; set; }
 
         
 

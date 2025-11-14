@@ -1,5 +1,22 @@
+using BeeBuzz.Data;
+using BeeBuzz.Data.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString)
+            .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+// register customizeble user
+builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>()
+               .AddEntityFrameworkStores<ApplicationDbContext>()
+               .AddDefaultTokenProviders();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
